@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>All Employee</title>
+</head>
+<body>
+<table>
+    <tr><th>Id</th><th>Name</th><th>Position</th></tr>
+    <tr th:each="employee : ${employees}">
+        <td th:text="${employee.id}">Id</td>
+        <td th:text="${employee.name}">Title</td>
+        <td th:text="${employee.position}">Category</td>
+    </tr>
+</table>
+</body>
+</html>
